@@ -1,0 +1,17 @@
+{
+  "name": "demo-crossplat-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run bundle && ava ./test/test.js",
+    "bundle": "rollup ./index.js --o bundle.js -f umd --name 'example'"
+  },
+  "author": "KP",
+  "license": "ISC",
+  "dependencies": {
+    "ava": "^0.24.0",
+    "rollup": "^0.52.0",
+    "window": "^4.2.4"
+  }
+}
